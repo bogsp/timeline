@@ -1,6 +1,12 @@
 #hero, #services {
     background-color: $highlight;
+}
 
+#hero {
+    background: url('../images/hero.jpg') no-repeat;
+    background-color: $highlight;
+    background-size: cover;
+    background-blend-mode: overlay;
     .contact-numbers {
         display: grid;
         grid-template-columns: max-content 1fr;
@@ -10,22 +16,19 @@
         }
     }
 }
-
-#hero {
-    background: url('../images/hero.jpg') no-repeat;
-    background-color: $highlight;
-    background-size: cover;
-    background-blend-mode: overlay;
-}
-.mission {
-    div {
-        margin-top: $margin * 2;
-        .mission-logo {
-            width: 100%;
-            padding: $padding;
-        }
-        ul li {
-            padding-left: $padding;
+#about .container {
+    .mission {
+        display: grid;
+        grid-template-columns: 1fr;
+        div {
+            margin-top: $margin * 2;
+            .mission-logo {
+                width: 100%;
+                padding: $padding;
+            }
+            ul li {
+                padding-left: $padding;
+            }
         }
     }
 }
@@ -42,6 +45,8 @@
 #contact {
     background-color: $highlight;
     .container {
+        display: grid;
+        grid-template-columns: 1fr;
         div {
             display: grid;
             grid-template-columns: 1fr;

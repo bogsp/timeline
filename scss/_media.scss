@@ -1,0 +1,87 @@
+@media screen and (min-width: 766px) {
+    header .container img {
+      width: 100px;
+    }
+    .blurbs {
+        gap: 1rem;
+        .blurb-item {
+            width: 100%;
+        }
+    }
+    #hero .container .blurbs {
+        grid-template-columns: repeat(3, 1fr);
+        .contact-numbers p:last-of-type {
+            font-size: .5rem;
+        }
+    }
+    #services .blurbs {
+        grid-template-columns: repeat(2, 1fr);
+        h1, p {
+            grid-column: 1 / span 2;
+        }
+    }
+    #clients .container .clients {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+        img {
+            width: 100%;
+        }
+    }
+    #contact .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        align-content: start;
+        h1 {
+            grid-column: 1 / span 2;
+        }
+    }
+    footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+        div, p {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    header .container {
+        .menu li a {
+            font-size: 1rem;
+            padding-left: $padding;
+        }
+        img {
+          width: 150px;
+        }
+    }
+    .blurbs {
+        gap: 1rem;
+        .blurb-item {
+            width: 100%;
+        }
+    }
+    #hero .container .blurbs {
+        grid-template-columns: repeat(3, 1fr);
+        .contact-numbers p:last-of-type {
+            font-size: .75rem;
+        }
+    }
+    #about .container .mission {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    #services .blurbs {
+        grid-template-columns: repeat(4, 1fr);
+        h1, p {
+            grid-column: 1 / span 4;
+        }
+    }
+    #contact .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-content: start;
+        h1 {
+            grid-column: 1 / span 2;
+        }
+    }
+}
