@@ -38,3 +38,18 @@
         width: 70vw;
     }
 }
+
+#contact {
+    background-color: $highlight;
+    .container {
+        div {
+            margin: $margin 0;
+        }
+        .form {
+            padding: $padding;
+        }
+        .map img {
+            width: 100%;
+        }
+    }
+}

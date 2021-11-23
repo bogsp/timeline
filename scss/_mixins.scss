@@ -1,0 +1,25 @@
+// Form
+@mixin input-defaults {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+@mixin input-transform {
+    transform: translateY(-100%);
+    font-size: .7rem;
+}
+
+@mixin label-defaults {
+    position: absolute;
+    font-size: .7rem;
+    pointer-events: none;
+}
+
+@mixin label-after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid $primary;
+    transform: translateX(-100%);
+    transition: all $transition ease;
+}
