@@ -237,6 +237,7 @@ input[type=submit]:hover {
 
 .label-text,
 .label-email {
+  width: 100%;
   position: absolute;
   font-size: .7rem;
   pointer-events: none;
@@ -258,6 +259,7 @@ input[type=submit]:hover {
 }
 
 .label-textarea {
+  width: 100%;
   position: absolute;
   font-size: .7rem;
   pointer-events: none;
@@ -268,7 +270,6 @@ input[type=submit]:hover {
 .label-textarea::before {
   content: '';
   position: absolute;
-  top: 50%;
   bottom: 1;
   border-bottom: 1px solid #333333;
 }
@@ -295,7 +296,7 @@ input[type=submit]:hover {
 
 .textarea-content {
   position: absolute;
-  bottom: 1rem;
+  bottom: 10px;
   left: 0;
   -webkit-transition: all 300 ease;
   transition: all 300 ease;

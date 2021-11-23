@@ -192,6 +192,7 @@ input[type=submit] {
 
 .label-text,
 .label-email {
+    width: 100%;
     @include label-defaults;
     left: 0;
     border-bottom: 1px solid $dark;
@@ -203,13 +204,14 @@ input[type=submit] {
 }
 
 .label-textarea {
+    width: 100%;
     @include label-defaults;
     top: -50%;
     left: 0;
     &::before {
         content: '';
         position: absolute;
-        top: 50%;
+        // top: 50%;
         bottom: 1;
         border-bottom: 1px solid $dark;
     }
@@ -229,7 +231,7 @@ input[type=submit] {
 
 .textarea-content {
     position: absolute;
-    bottom: $margin;
+    bottom: 10px;
     left: 0;
     transition: all $transition ease;
 }
