@@ -58,7 +58,7 @@ header .container {
     align-items: center;
     justify-content: space-between;
     img {
-        width: 100px;
+        width: 80px;
         margin: $margin 0;
     }
     .menu {
@@ -70,9 +70,9 @@ header .container {
             a {
                 text-decoration: none;
                 text-transform: uppercase;
-                padding-right: .7rem;
+                padding-right: .4rem;
                 font-family: 'Lora', serif;
-                font-size: .6rem;
+                font-size: .75rem;
                 font-weight: 500;
             }
         } 
@@ -115,7 +115,7 @@ footer {
         width: 70vw;
         background-color: $light;
         margin: $margin 0;
-        padding: $padding * 4;
+        padding: $padding * 2;
     }
 }
 
@@ -124,124 +124,40 @@ footer {
     background-color: $light;
     padding: $padding * 2;
     form {
-        display: grid;
-        grid-template-columns: 1fr;
         color: $primary;
-        border: 1px solid $dark;
         padding: $padding * 2;
-        
     }
 }
 
-input[type=text] {
-    width: 100%;
-    padding-top: $padding;
-    @include input-defaults;
-    &:focus+.label-text .input-content,
-    &:valid+.label-text .input-content {
-        @include input-transform;
-    }
-    &:focus+.label-text::after,
-    &:valid+.label-text::after {
-        transform: translateX(0%);
-    }
-}
-
-input[type=email] {
-    width: 100%;
-    padding-top: $padding;
-    @include input-defaults;
-    &:focus+.label-email .input-content,
-    &:valid+.label-email .input-content {
-        @include input-transform;
-    }
-    &:focus+.label-email::after,
-    &:valid+.label-email::after {
-        transform: translateX(0%);
-    }
-}
-
+input[type=text],
+input[type=email],
+input[type=submit],
 textarea {
     width: 100%;
-    padding-top: $padding;
-    @include input-defaults;
-    &:valid+.label-textarea .textarea-content,
-    &:focus+.label-textarea .textarea-content {
-        @include input-transform;
-    }
-    &:valid+.label-textarea::after,
-    &:focus+.label-textarea::after {
-        transform: translateX(0%);
-    }
+    outline: none;
+    border: none;
+    margin: $margin / 3 0;
+    padding: $padding / 2;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    background-color: $secondary;
+}
+input[type=text],
+input[type=email] {
+    height: 1.5rem;
 }
 
 input[type=submit] {
-    outline: none;
-    border: none;
-    font-size: .7rem;
     color: $light;
     background-color: $primary;
     cursor: pointer;
-    padding: $padding / 2 $padding;
-    margin: $margin 0;
-    transition: opacity $transition ease-in-out;
     &:hover {
         opacity: .75;
     }
 }
-
-.label-text,
-.label-email {
-    width: 100%;
-    @include label-defaults;
-    left: 0;
-    border-bottom: 1px solid $dark;
-    &::after {
-        @include label-after;
-        left: 0;
-        bottom: -1px;
-    }
-}
-
-.label-textarea {
-    width: 100%;
-    @include label-defaults;
-    top: -50%;
-    left: 0;
-    &::before {
-        content: '';
-        position: absolute;
-        // top: 50%;
-        bottom: 1;
-        border-bottom: 1px solid $dark;
-    }
-    &::after {
-        @include label-after;
-        top: 50%;
-        bottom: 1px;
-    }
-}
-
-.input-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: all $transition ease;
-}
-
-.textarea-content {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    transition: all $transition ease;
-}
-
-.input {
-    position: relative;
-    // overflow: hidden;
-}
-
-
 
 // Layout
 header,
@@ -251,6 +167,11 @@ section {
     grid-template-columns: $gutter 1fr $gutter;
     .container {
         grid-column: 2;
+    }
+}
+footer,
+section {
+    .container {
         margin-bottom: $margin * 2;
     }
 }

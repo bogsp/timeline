@@ -43,13 +43,17 @@
     background-color: $highlight;
     .container {
         div {
-            margin: $margin * 2 0;
+            display: grid;
+            grid-template-columns: 1fr;
         }
         .form {
             padding: $padding;
         }
-        .map img {
-            width: 100%;
+        .map {
+            margin: $margin * 2 0;
+            img {
+                width: 100%;
+            }
         }
     }
 }
