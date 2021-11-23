@@ -284,7 +284,7 @@ section .container {
 }
 
 #contact .container .form {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 #contact .container .map {
@@ -341,6 +341,9 @@ section .container {
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
   }
+  #contact .container .map {
+    margin: 0;
+  }
   footer .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -364,7 +367,7 @@ section .container {
     width: 150px;
   }
   .blurbs {
-    gap: 1rem;
+    gap: 2rem;
   }
   .blurbs .blurb-item {
     width: 100%;
@@ -379,7 +382,7 @@ section .container {
   #about .container .mission {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 2rem;
   }
   #services .blurbs {
     -ms-grid-columns: (1fr)[4];
@@ -393,7 +396,7 @@ section .container {
   #contact .container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 3rem;
     -ms-flex-line-pack: start;
         align-content: start;
   }
