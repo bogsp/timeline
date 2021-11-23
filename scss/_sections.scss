@@ -1,0 +1,29 @@
+#hero, #services {
+    background-color: $highlight;
+
+    .contact-numbers {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        grid-column-gap: 1rem;
+        .blurb-heading {
+            grid-column: 1 / span 2;
+        }
+    }
+}
+.mission {
+    div {
+        margin-top: $margin * 2;
+        .mission-logo {
+            width: 100%;
+            padding: $padding;
+        }
+    }
+}
+
+#clients .container .clients {
+    display: grid;
+    grid-template-columns: 1fr;
+    img {
+        width: 100%;
+    }
+}
