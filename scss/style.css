@@ -140,6 +140,13 @@ section .container {
   grid-column: 1 / span 2;
 }
 
+#hero {
+  background: url("../images/hero.jpg") no-repeat;
+  background-color: #e8ed07;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
 .mission div {
   margin-top: 2rem;
 }

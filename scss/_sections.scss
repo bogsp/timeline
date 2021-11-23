@@ -10,6 +10,13 @@
         }
     }
 }
+
+#hero {
+    background: url('../images/hero.jpg') no-repeat;
+    background-color: $highlight;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
 .mission {
     div {
         margin-top: $margin * 2;
