@@ -246,7 +246,7 @@ header,
 footer,
 section {
     display: grid;
-    grid-template-columns: 5vw 1fr 5vw;
+    grid-template-columns: $gutter 1fr $gutter;
     .container {
         grid-column: 2;
         margin-bottom: $margin * 2;

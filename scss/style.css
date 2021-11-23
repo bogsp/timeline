@@ -310,8 +310,8 @@ footer,
 section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 5vw 1fr 5vw;
-      grid-template-columns: 5vw 1fr 5vw;
+  -ms-grid-columns: 8vw 1fr 8vw;
+      grid-template-columns: 8vw 1fr 8vw;
 }
 
 header .container,
